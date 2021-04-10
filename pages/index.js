@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import { useRef } from "react";
 import { useRouter } from "next/router";
 
+
 export default function Home() {
   const router = useRouter();
   const searchInputRef = useRef(null);
@@ -42,7 +43,7 @@ export default function Home() {
 
           <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
-          <Avatar url="https://coaching.papareact.com/ai9" />
+          <Avatar url='https://jdm-myportfolio.herokuapp.com/images/profilepic.jpeg' />
         </div>
       </header>
 

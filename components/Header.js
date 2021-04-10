@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Avatar from './Avatar'
 import HeaderOptions from './HeaderOptions'
 
+
 function Header() {
   const router = useRouter();
   const searchInputRef = useRef(null);
@@ -19,7 +20,7 @@ function Header() {
     <header className='sticky top-0 bg-white'>
     <div className='flex w-full p-6 items-center'>
       <Image
-        src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        src='https://jdm-myportfolio.herokuapp.com/images/profilepic.jpeg'
         height={40}
         width={120}
         onClick={() => router.push("/")}
@@ -41,7 +42,7 @@ function Header() {
         <SearchIcon className='h-6 text-blue-500 hidden sm:inline-flex' /> 
         <button hidden type='submit' onClick={search}>Search</button>
       </form>
-      <Avatar className='ml-auto' url="https://coaching.papareact.com/ai9" />
+      <Avatar className='ml-auto' url='https://jdm-myportfolio.herokuapp.com/images/profilepic.jpeg' />
     </div>
     <HeaderOptions />
     </header>
